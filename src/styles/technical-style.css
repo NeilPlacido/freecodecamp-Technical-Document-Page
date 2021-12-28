@@ -12,7 +12,8 @@ html, body {
 }
 
 header {
-  margin: 10px;
+  background: seagreen;
+  padding: 10px;
   color: black;
   font-size: 30px;
   text-align: center;
@@ -21,9 +22,12 @@ header {
 #main-doc header {
   text-align: left;
   margin: 10px;
+  background: none;
+  color: #050505;
 }
 
 #navbar {
+  background: #414141;
   position: fixed;
   top: 0%;
   left: 0%;
@@ -42,7 +46,7 @@ header {
 
 #navbar li {
   list-style-type: none;
-  border: 1px solid rgba(65, 65, 65, 0.781);
+  border: 1px solid #252927;
   width: 100%;
 }
 
@@ -53,6 +57,11 @@ header {
   color: seagreen;
   text-decoration: none;
   cursor: pointer;
+}
+
+#navbar a:hover {
+  background: seagreen;
+  color: black;
 }
 
 #main-doc {
@@ -72,12 +81,13 @@ section li {
 code {
   display: block;
   text-align: left;
+  color: #0fac53;
   white-space: pre-line;
   position: relative;
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #f7f7f7;
+  background-color: ivory;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
@@ -86,7 +96,7 @@ code {
 @media only screen and (max-width: 815px) {
   #navbar ul {
     border: 1px solid;
-    height: 200px;
+    height: 210px;
   }
   #navbar {
     background-color: white;
